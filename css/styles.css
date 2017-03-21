@@ -223,32 +223,32 @@ time {
   margin-bottom: 0;
 }
 
-.mk-img {
+.mk-img:before {
   content: url(../img/mk-img.svg);
   margin: auto;
 }
 
-.ep-img {
+.ep-img:before {
   content: url(../img/ep-img.svg);
   margin: auto;
 }
 
-.dhs-img {
+.dhs-img:before {
   content: url(../img/dhs-img.svg);
   margin: auto;
 }
 
-.dak-img {
+.dak-img:before {
   content: url(../img/dak-img.svg);
   margin: auto;
 }
 
-.resort-img {
+.resort-img:before {
   content: url(../img/resort-img.svg);
   margin: auto;
 }
 
-.rD-img {
+.rD-img:before {
   content: url(../img/rd-img.svg);
   margin: auto;
 }
