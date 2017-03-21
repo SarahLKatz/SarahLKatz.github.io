@@ -87,8 +87,9 @@ $(function() {
   // BOTTOM:
   // 1- "Reset Timeline"
   $("#reset").click(function() {
-    location.reload();
-  })
+    $("li").removeClass("hide");
+    realign();
+  });
 
   // 2 - "Return to Top"
   $("#top").click(function(){
