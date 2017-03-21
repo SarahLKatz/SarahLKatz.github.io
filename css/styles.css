@@ -223,6 +223,36 @@ time {
   margin-bottom: 0;
 }
 
+.mk-img {
+  content: url(../img/mk-img.svg);
+  margin: auto;
+}
+
+.ep-img {
+  content: url(../img/ep-img.svg);
+  margin: auto;
+}
+
+.dhs-img {
+  content: url(../img/dhs-img.svg);
+  margin: auto;
+}
+
+.dak-img {
+  content: url(../img/dak-img.svg);
+  margin: auto;
+}
+
+.resort-img {
+  content: url(../img/resort-img.svg);
+  margin: auto;
+}
+
+.rD-img {
+  content: url(../img/rd-img.svg);
+  margin: auto;
+}
+
 p {
   font-size: 1.3rem;
 }
