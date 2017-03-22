@@ -30,7 +30,7 @@ button {
   height: 4rem;
   width: 100%;
   font-size: 1.4rem;
-  line-height: 1.4rem;
+  line-height: 1.2rem;
   border-radius: 4px;
   color: white;
   margin-top: 5%;
@@ -64,6 +64,20 @@ button {
   border: solid 1px #20538D;
 }
 
+.instructions {
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid #d4d4d4;
+  border-radius: 2px;
+  padding: 2px;
+  font-size: 1.2rem;
+  margin-bottom: 0.5%;
+}
+
+.instructions span {
+  display: block;
+  text-align: center;
+}
+
 /*Timeline Styles*/
 /*Styles - Overall Timeline*/
 .timeline {
@@ -71,6 +85,10 @@ button {
   font-size: 1.2em;
   margin-top: 9.5%;
   padding-top: 2%
+}
+
+ul.timeline {
+  padding-top: 7.5%;
 }
 
 time {
@@ -271,4 +289,32 @@ h3 {
 
 .hide {
   display: hide;
+}
+
+@media only screen and (max-width: 768px) {
+  h1, button {
+    font-size: 1.4rem;
+    line-height: 1.4rem;
+    margin: 2%;
+  }
+
+  .instructions {
+    display: none;
+  }
+
+  ul.timeline {
+    padding-top: 17%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  h1, button {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin: 1%;
+  }
+
+  button {
+    height: 3rem;
+  }
 }
