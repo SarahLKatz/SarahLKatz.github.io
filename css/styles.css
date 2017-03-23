@@ -272,7 +272,8 @@ time {
 }
 
 p {
-  font-size: 1.3rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2rem;
 }
 
 /*Footer Styles*/
