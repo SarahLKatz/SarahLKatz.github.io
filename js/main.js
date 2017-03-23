@@ -128,7 +128,7 @@ $(function() {
     var itemsVisible = $("li:visible").length;
 
     if (itemsVisible === 0) {
-      $(".timeline").append("<li><div class='instructions'><h4><span>Click a button above to see events related to that category. Click 'Reset Timeline' below to reset the timeline.</span></h4></div></li>")
+      $(".timeline").append("<li><div class='instructions'><h4><span>Click a button above to see events related to that category. Click 'Reset Timeline' below to display all events.</span></h4></div></li>")
     }  
     else {}
   }
