@@ -2,12 +2,15 @@ $(function() {
 
   // BUTTONS:
   var pushed
+  firstClick();
 
   // 1 - On first click, hide all items
-  $("nav").one("click", function() {
-    $("li").addClass("hide");
-    onPush();
-  });
+  function firstClick() {
+    $("nav").one("click", function() {
+      $("li").addClass("hide");
+      onPush();
+    })
+  };
 
   // 2 - Display items for the chosen class
 
@@ -18,6 +21,7 @@ $(function() {
     $(this).toggleClass("selected")
     determineClass(pushed);
     filterItems(classChosen);
+    emptyPageAlert();
   };
 
   // 2A - Determining the Chosen Class
@@ -88,13 +92,19 @@ $(function() {
   // 1- "Reset Timeline"
   $("#reset").click(function() {
     $("li").removeClass("hide");
+    $("button").removeClass("selected");
+    $("p").hide();
     realign();
+    toTop();
+    firstClick();
   });
 
   // 2 - "Return to Top"
-  $("#top").click(function(){
+  $("#top").click(toTop);
+
+  function toTop(){
     scroll(0,0);
-  });
+  };
 
   // Re-Alignment Function
   function realign() {
@@ -113,4 +123,13 @@ $(function() {
     $(this).find("p").toggle();
   });
 
+  // Alert if nothing is displayed
+  function emptyPageAlert() {
+    var itemsVisible = $("li:visible").length;
+
+    if (itemsVisible === 0) {
+      $(".timeline").append("<li><div class='instructions'><h4><span>Click a button above to see events related to that category. Click 'Reset Timeline' below to reset the timeline.</span></h4></div></li>")
+    }  
+    else {}
+  }
 });
