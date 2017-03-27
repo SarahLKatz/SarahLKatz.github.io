@@ -1,7 +1,8 @@
 $(function() {
 
   // BUTTONS:
-  var pushed
+  var pushed;
+  var itemsVisible;
   firstClick();
 
   // 1 - On first click, hide all items
@@ -91,11 +92,7 @@ $(function() {
   // BOTTOM:
   // 1- "Reset Timeline"
   $("#reset").click(function() {
-    $("li").removeClass("hide");
-    $("button").removeClass("selected");
-    $("p").hide();
-    realign();
-    toTop();
+    showAll();
     firstClick();
   });
 
@@ -114,6 +111,15 @@ $(function() {
     $("li:visible:odd").addClass("timeline-inverted");
   };
 
+  // Show All Function
+  function showAll() {
+    $("li").removeClass("hide");
+    $("button").removeClass("selected");
+    $("p").hide();
+    realign();
+    toTop();
+  }
+
   // More Information About Timeline Items
   // 1 - Have all additional info hidden 
   $("p").hide();
@@ -128,9 +134,13 @@ $(function() {
     var itemsVisible = $("li:visible").length;
 
     if (itemsVisible === 0) {
-      $(".timeline").append("<li><div class='instructions'><h4><span>Click a button above to see events related to that category. Click 'Reset Timeline' below to display all events.</span></h4></div></li>")
-      $(".timeline .instructions").show();
-    }  
-    else {}
+      // $(".timeline").append("<li><div class='instructions'><h4><span>Click a button above to see events related to that category. Click 'Reset Timeline' below to display all events.</span></h4></div></li>")
+      // $(".timeline .instructions").show();
+      showAll();
+      $("button").addClass("selected");
+    }
+    else {
+      // $(".timeline .instructions").hide();
+    }
   }
 });
