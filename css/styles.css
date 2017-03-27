@@ -324,9 +324,10 @@ h3 {
   }
 
   h1 {
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
     line-height: 1rem;
-    margin: 1%;
+    margin: 0;
   }
 
   ul.timeline {
