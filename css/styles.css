@@ -324,21 +324,21 @@ h3 {
   }
 
   h1 {
-    font-size: 1.2rem;
-    line-height: 1.1rem;
+    font-size: 1rem;
+    line-height: 1rem;
     margin: 1%;
   }
 
   ul.timeline {
-    padding-top: 22%;
+    padding-top: 24%;
   }
 
   h4 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 0.75rem;
   }
 
 }
