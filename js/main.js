@@ -1,5 +1,8 @@
 $(function() {
 
+  // Initial Load: Alternating Timeline
+  realign()
+
   // BUTTONS:
   var pushed;
   var itemsVisible;
