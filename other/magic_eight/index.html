@@ -9,18 +9,34 @@
 <body>
   <div class="container">
     <div class="content text-center">
-      <h1>Ask A Question!</h1>
+      <nav class="navbar navbar-default">
+        <button class="btn btn-default navbar-btn" id="default">Default Colors</button>
+        <button class="btn btn-default navbar-btn" id="red">Red/Blue</button>
+        <button class="btn btn-default navbar-btn" id="yellow">Yellow/Red</button>
+        <button class="btn btn-default navbar-btn" id="green">Green/Black</button>
+        <button class="btn btn-default navbar-btn" id="blue">Blue/Brown</button>
+        <button class="btn btn-default navbar-btn" id="purple">Purple/Navy</button>
+        <button class="btn btn-default navbar-btn" id="pink">Pink/Green</button>
+        <button class="btn btn-default navbar-btn" id="beige">Beige/Green</button>
+        <button class="btn btn-default navbar-btn" id="brown">Brown/Blue</button>
+        <button class="btn btn-default navbar-btn" id="white">White/Red</button>
+      </nav>
+      
+      <div class="changeable">
+        <h1>Ask A Question!</h1>
 
-      <div class="eight-ball">
-        <img id ="displayed" class="basic" src="img/front_of_ball.svg" alt="Magic 8 Ball"/>
+        <div class="eight-ball">
+          <img id ="displayed" class="basic" src="img/front_of_ball.svg" alt="Magic 8 Ball"/>
+        </div>
+
+        <button id="shake">Shake the Magic 8 Ball</button>
       </div>
-
-      <button id="shake">Shake the Magic 8 Ball</button>
 
     </div>
   </div>
 
   <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
   <script src="js/main.js"></script>
 </body>
 

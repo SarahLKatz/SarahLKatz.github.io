@@ -86,4 +86,10 @@ $(function() {
     $("#displayed").attr("src", newPath)
   };
 
+  $("nav button").click(function(){
+    var color = $(this).attr("id")
+    $("body").removeClass();
+    $("body").addClass(color);
+  });
+
 });

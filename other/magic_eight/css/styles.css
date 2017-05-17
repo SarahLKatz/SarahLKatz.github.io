@@ -5,6 +5,7 @@
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 body {
@@ -14,20 +15,6 @@ body {
 .eight-ball {
   padding: 2%;
 }
-
-/*.shake {
-  display:inline-block
-}
-
-.shake {
-  display:block;
-  position:relative;
-}
-
-img.shake,
-.shake.inline {
-  display:inline-block
-}*/
 
 @-webkit-keyframes spaceboots {
   0% { -webkit-transform: translate(2px, 1px) rotate(0deg); }
@@ -50,4 +37,55 @@ img.shake,
   -webkit-transform-origin:50% 50%;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-timing-function: linear;
+}
+
+nav button {
+  margin-top: 0.5%;
+  margin-left: 0.5%
+}
+
+/*Color Options*/
+.purple {
+  background-color: plum;
+  color: navy;
+}
+
+.pink {
+  background-color: lightpink;
+  color: darkcyan;
+}
+
+.blue {
+  background-color: paleTurquoise;
+  color: saddlebrown;
+}
+
+.beige {
+  background-color: linen;
+  color: darkGreen;
+}
+
+.brown {
+  background-color: RGBa(210, 180, 140,0.5);
+  color: darkblue;
+}
+
+.yellow {
+  background-color: LEMONCHIFFON;
+  color: red;
+}
+
+.white {
+  background-color: white;
+  color: INDIANRED;
+}
+
+.green {
+  background-color: MEDIUMSPRINGGREEN;
+  color: black;
+}
+
+.red {
+  background-color: firebrick;
+  color: lightcyan;
 }
