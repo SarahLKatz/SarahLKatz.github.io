@@ -12,6 +12,10 @@ body {
   background-color: #EEE;
 }
 
+nav a {
+  margin: 3%;
+}
+
 .eight-ball {
   padding: 2%;
 }
@@ -87,5 +91,5 @@ nav button {
 
 .red {
   background-color: firebrick;
-  color: lightcyan;
+  color: blue;
 }
