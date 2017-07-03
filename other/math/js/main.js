@@ -30,7 +30,7 @@ $(function(){
   };
 
   //Sum Between Two Numbers
-  //$("#num-sum").click(sumValues);
+  $("#num-sum").click(sumValues);
 
   function sumValues(){
     var firstVal = parseInt($(".sum-btwn #val1").val());
