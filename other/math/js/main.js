@@ -30,7 +30,7 @@ $(function(){
   };
 
   //Sum Between Two Numbers
-  $("#num-sum").click(sumValues);
+  //$("#num-sum").click(sumValues);
 
   function sumValues(){
     var firstVal = parseInt($(".sum-btwn #val1").val());
@@ -57,6 +57,43 @@ $(function(){
     }
     else {
       $('#sum-between').text('Your Sum is: ' + start);
+    }
+  };
+
+  //Prime number above & below
+  $("#prime-find").click(findPrimes);
+
+  function isPrime(number) {
+    var start = 2;
+    while (start <= Math.sqrt(number)) {
+        if (number % start++ < 1) return false;
+    }
+    return number > 1;
+  }
+
+  function findPrimes() {
+    var forPrime = parseInt($(".primes #prime1").val());
+    highPrime(forPrime);
+    lowPrime(forPrime);
+  }
+
+  function highPrime(num) {
+    for (var x = num+1; x < num**2; x++) {
+      if (isPrime(x)) {
+        var higherPrime = x;
+        $('#prime-high').text('The Prime Number Immediately Above Your Number is: ' + higherPrime);
+        break;
+      }
+    }
+  }
+
+  function lowPrime(nums) {
+    for (var y = nums-1; y > 0; y--) {
+      if (isPrime(y)) {
+        var lowerPrime = y;
+        $('#prime-low').text('The Prime Number Immediately Below Your Number is: ' + lowerPrime);
+        break;
+      }
     }
   };
 
