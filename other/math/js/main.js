@@ -97,4 +97,25 @@ $(function(){
     }
   };
 
+  // Find Divisors
+  $("#divisors-all").click(findDivisors);
+
+  function findDivisors(){
+    // 1. get the value from the text fields
+    var divisorsNumber = parseInt($(".divisors #divisor1").val());
+
+    // 2. Create an empty array to hold divisors
+    var divisors = [];
+
+    // 3. Go through numbers from 0 to number and establish if they're divisors
+    for (var j = 1; j < divisorsNumber; j++) {
+      if (divisorsNumber%j === 0) {
+        divisors.push(j);
+      }
+    };
+
+    //4. Display Divisors
+    $('#divisors').text(divisors.join(", "));
+  };
+
 });
