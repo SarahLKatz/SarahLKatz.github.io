@@ -108,7 +108,7 @@ $(function(){
     var divisors = [];
 
     // 3. Go through numbers from 0 to number and establish if they're divisors
-    for (var j = 1; j < divisorsNumber; j++) {
+    for (var j = 1; j <= divisorsNumber; j++) {
       if (divisorsNumber%j === 0) {
         divisors.push(j);
       }
