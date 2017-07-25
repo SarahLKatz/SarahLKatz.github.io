@@ -17,6 +17,24 @@ $(function() {
 				'Choose coffee grounds that are lighter than your usual preferred coffee. Single origin coffee grounds are best for this recipe.',
 				'This recipe can be increased or decreased based on your needs, but always maintain a 4:1 water to coffee ratio'
 			]
+		},
+		granola: {
+			'title': 'Sarah\'s Easy Granola',
+			'serves': 10,
+			'prep': ['Active: 20 minutes', 'Passive: 35 minutes'],
+			'ingredients': ['1/4 cup agave syrup', '1/4 cup clover honey', '1 teaspoon ground cinnamon', '2 tablespoons packed light brown sugar', '1 teaspoon vanilla extract', '1 1/2 cups instant oats', '3/4 cup assorted nuts and seeds'],
+			'instructions': [
+				'Preheat the oven to 325 degrees F. Line a rimmed baking sheet with parchment paper or a silicone baking mat',
+				'Mix the agave syrup, honey, cinnamon, brown sugar and vanilla extract in a small bowl until smooth', 
+				'Combine the oats and other fruits and nuts in a large bowl',
+				'Add the wet mixture (agave/honey/etc) to the dry mixture (oats) and stir, making sure everything is evenly coated',
+				'Spread the mixture evenly on the prepared baking sheet; bake, stirring occasionally, until golden brown and crisp, 25 to 30 minutes',
+				'Remove the granola from the oven and let cool slightly, then break into clumps while still warm.'
+
+			],
+			'notes': [
+				'Feel free to experiment with the ratio of oats to nuts & seeds - see what works best for you!'
+			]
 		}
 	}
 
