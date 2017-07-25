@@ -118,4 +118,32 @@ $(function(){
     $('#divisors').text(divisors.join(", "));
   };
 
+  // Multiple Choice Answers
+  $('#mc-select').click(selectAnswers);
+
+  function selectAnswers() {
+    // 1. Recieve Inputs
+    var numQuests = parseInt($('#mc-quests').val());
+    var choices = $('#mc-num-ans').val();
+
+    // 2. List of possible answers
+    var allAnswers = ['A','B','C','D','E','F','G','H'];
+    possibleAnswers = allAnswers.splice(0,choices);
+
+    // 3. Create an empty array to hold the answers you chose
+    var answers = [];
+
+    // 4. For each question, find a random answer
+    for (var mc = 1; mc <= numQuests; mc++) {
+      var currentAns = parseInt(Math.random()*choices);
+      // 5. Add your random answer to the answers array
+      answers.push(possibleAnswers[currentAns]);
+    };
+
+    // 6. Display the full list of answers
+    for (var mcAns = 0; mcAns < answers.length; mcAns++) {
+      $('#mc-answers').append('<li>' + answers[mcAns] + '</li>');
+    };
+  };
+
 });
