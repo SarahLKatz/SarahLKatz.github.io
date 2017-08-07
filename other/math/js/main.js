@@ -6,7 +6,7 @@ $(function(){
   function establishNums(){
     // 1. get the values from the text fields
     var startVal = parseInt($(".random #start").val());
-    var endVal = parseInt($(".random #end").val());
+    var endVal = parseInt($(".random #end").val()) + 1;
 
     // 2. Establish that Numbers Are Legit
     if (endVal <= startVal) {
