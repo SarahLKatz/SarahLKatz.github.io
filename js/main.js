@@ -1,6 +1,6 @@
 $(function() {
   // Populate Timeline
-  const allEvents = [...aughtsEvents, ...tensEvents]
+  const allEvents = [...ninetiesEvents, ...aughtsEvents, ...tensEvents]
   populateTimeline(allEvents)
 
   // Initial Load: Alternating Timeline
@@ -113,7 +113,9 @@ $(function() {
   function populateTimeline(eventList) {
     var timeline = $(".timeline");
     eventList.forEach(event => {
-      let eventHtml = `<li><div class="timeline-badge ${event.park}">
+      let eventHtml = `
+        <li>
+          <div class="timeline-badge ${event.park}">
             <i class="${event.park}-img"></i>
           </div>
           <div class="timeline-panel">
@@ -129,7 +131,8 @@ $(function() {
               </p>
             </div>
           </div>
-        </li>`;
+        </li>
+      `;
       if (event.date) timeline.append(eventHtml);
     });
   }
