@@ -1,6 +1,6 @@
 $(function() {
   // Populate Timeline
-  const allEvents = [...ninetiesEvents, ...aughtsEvents, ...tensEvents]
+  const allEvents = [...eightiesEvents, ...ninetiesEvents, ...aughtsEvents, ...tensEvents]
   populateTimeline(allEvents)
 
   // Initial Load: Alternating Timeline
