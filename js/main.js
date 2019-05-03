@@ -1,4 +1,7 @@
 $(function() {
+  // Populate Timeline
+  const allEvents = [...seventiesEvents, ...eightiesEvents, ...ninetiesEvents, ...aughtsEvents, ...tensEvents]
+  populateTimeline(allEvents)
 
   // Initial Load: Alternating Timeline
   realign()
@@ -105,6 +108,34 @@ $(function() {
   function toTop(){
     scroll(0,0);
   };
+
+  // Populate timeline function
+  function populateTimeline(eventList) {
+    var timeline = $(".timeline");
+    eventList.forEach(event => {
+      let eventHtml = `
+        <li>
+          <div class="timeline-badge ${event.park}">
+            <i class="${event.park}-img"></i>
+          </div>
+          <div class="timeline-panel">
+            <div class="timeline-heading">
+              <h4 class="timeline-title">
+                <time>${event.date}:</time>
+                ${event.title}
+              </h4>
+            </div>
+            <div class="timeline-body">
+              <p>
+                ${event.description}
+              </p>
+            </div>
+          </div>
+        </li>
+      `;
+      if (event.date) timeline.append(eventHtml);
+    });
+  }
 
   // Re-Alignment Function
   function realign() {
